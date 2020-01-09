@@ -71,6 +71,289 @@
 					</ul>
 				</div>
 			</nav>
+			<section class="modal-wrapper">
+				<div class="container-lg">
+					<!-- Modal -->
+					<div class="modal fade bd-example-modal-lg " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<!-- <div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div> -->
+								<div class="modal-body">
+									<div class="quote-engine-wrapper d-flex justify-content-center">
+										<form action="./dist/php/data.php" method="POST">
+											<div class="first">
+												<h5 class="center-align">What type of Paining do you need?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="Domestic Painting" type="radio"  />
+														<span>Domestic Painting</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" value="Commercial Painting" type="radio"  />
+														<span>Commercial Painting</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="Exterior Painting"  />
+														<span>Exterior Painting</span>
+													</label>
+												</p>
+												
+												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue</button>
+											</div>
+											<!-- <div class="second hide">
+												<h5 class="center-align">Which Vehicle need service?</h5>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Car" />
+														<span>Car</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="4X4" />
+														<span>4X4</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Jeep" />
+														<span>Jeep</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Van or Light Commercial" />
+														<span>Van or Light Commercial</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input name="check[]" type="checkbox" value="Shower" />
+														<span>Minibus</span>
+													</label>
+												</p>
+												
+												
+												 <button onclick="handleSecond()"  type="button" class="btn button">Continue</button> 
+												 
+											</div> -->
+											<div class="type hide">
+												<h5 class="center-align">In Which area?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="East London" />
+														<span>East London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="West London" />
+														<span>West London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="North London"  />
+														<span>North London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="East central London"  />
+														<span>East central London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="West central London"  />
+														<span>West central London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="North West London"  />
+														<span>North West London</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="South West London & Surrey"  />
+														<span>South West London & Surrey</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="type" type="radio" value="South East London & North Kent"  />
+														<span>South East London & North Kent</span>
+													</label>
+												</p>
+												<button onclick="handleType()"  type="button" class="btn button">Continue</button>
+												 
+											</div>
+											<div class="third hide">
+												<h5 class="center-align">When do you want this service completed?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
+														<span>As soon as possible</span>
+													</label>
+												</p>
+												
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within the next month"  />
+														<span>Within the next week</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within the next 3 weeks"  />
+														<span>Within the next 3 weeks</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="Within one month"  />
+														<span>Within one month</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="third" type="radio" value="I don't have a specific date in mind"  />
+														<span>I don't have a specific date in mind</span>
+													</label>
+												</p>  
+												<button onclick="handleThird()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="fourth hide">
+												<h5 class="center-align">Who will purchase the materials?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I will provide the materials" />
+														<span>I will provide the materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I would like the pro to provide materials"  />
+														<span>I would like the pro to provide materials</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="I would like to discuss with the professional" />
+														<span>I would like to discuss with the professional</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="fourth" type="radio" value="No materials needed" />
+														<span>No materials needed</span>
+													</label>
+												</p>
+												<button onclick="handleFourth()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="last hide">
+													<h5>Fill up the form to complete this request</h5>
+												<div class="row">
+													
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Name: "
+																name="first-name"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="email"
+																class="form-control"
+																id="exampleInputEmail1"
+																placeholder="Email: "
+																aria-describedby="emailHelp"
+																name="email"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Phone: "
+																name="phone"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Postcode : "
+																name="postcode"
+															/>
+														</div>
+													</div>
+													<!-- <div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Pick-up Postcode"
+																name="pick_post"
+																required
+															/>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<input
+																type="text"
+																class="form-control"
+																placeholder="Vehicle Drop off Postcode"
+																name="drop_post"
+																required
+															/>
+														</div>
+													</div> -->
+													<div class="col-md-12">
+															<div class="form-group">
+																	<textarea name="message" class="form-control" id="exampleFormControlTextarea1" placeholder="Description of your Problem" rows="3" required></textarea>
+																</div>
+													</div>
+													
+												</div>
+												<button class="btn button">Submit </button>
+											</div>   
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn button" data-dismiss="modal">X</button>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 
 		<!-- bootstrap js CDN -->
