@@ -26,7 +26,7 @@
 
 .button:hover {
   background: #fce205;
-  color: #f2f2f2;
+  color: #1e272e;
   border: 1px solid #fce205;
   -webkit-transition: 0.6s ease-in;
   transition: 0.6s ease-in;
@@ -100,9 +100,10 @@
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #1e272e;
+  color: #f2f2f2;
   padding: 0.5rem 1rem;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 1px;
   border-radius: 3rem;
 }
 
@@ -110,13 +111,18 @@
   background: #b2b4e9;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.button {
-  color: #f2f2f2;
-  padding: 0.5rem 1rem;
+.navbar .navbar-nav .nav-item .button {
+  letter-spacing: 1px;
+  background: #fce205;
+  color: #1e272e;
+  border: 1px solid #fce205;
+  font-weight: 900;
 }
 
-.navbar .navbar-nav .nav-item .nav-link.button:hover {
-  background: #fce205;
+.navbar .navbar-nav .nav-item .button:hover {
+  background: #3c40c6;
+  color: #f2f2f2;
+  border: 1px solid #3c40c6;
 }
 
 .navbar.scrolled {
@@ -163,20 +169,18 @@
   text-align: left;
 }
 
-.hero .hero-text .content h3 {
-  font-weight: 600;
-  color: #f2f2f2;
-}
-
-.hero .hero-text .content p {
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: #f2f2f2;
-}
-
-.hero .hero-text .content .button {
+.hero .hero-text .hero-button .button {
   letter-spacing: 1px;
+  background: #fce205;
+  color: #1e272e;
+  border: 1px solid #fce205;
+  font-weight: 900;
+}
+
+.hero .hero-text .hero-button .button:hover {
+  background: #3c40c6;
+  color: #f2f2f2;
+  border: 1px solid #3c40c6;
 }
 
 .hero::after {
@@ -192,20 +196,22 @@
 
 .hero-shapes {
   position: relative;
-  margin-top: 5px;
+  margin: 2rem 0;
 }
 
 .hero-shapes .hs-content {
-  background: rgba(30, 39, 46, 0.5);
-  padding: 5% 5% 10% 5%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 100%, 0 81%);
-          clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 100%, 0 81%);
+  background: rgba(60, 64, 198, 0.7);
+  padding: 5% 10% 5% 5%;
+  -webkit-clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 }
 
 .hero-shapes .hs-content .hs-content-text {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #f2f2f2;
+  text-transform: capitalize;
   font-weight: 700;
+  margin-left: 0.5rem;
 }
 
 .hero-button {

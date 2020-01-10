@@ -33,21 +33,32 @@
 				text-align: left;
 			}
 		}
-		.content {
-			h3 {
-				font-weight: 600;
-				color: $text-rev;
-			}
-			p {
-				font-size: 1.4rem;
-				font-weight: 500;
-				text-transform: capitalize;
-				color: $text-rev;
-			}
+		.hero-button {
 			.button {
 				letter-spacing: 1px;
+				background: $secondary-color;
+				color: $text-color;
+				border: 1px solid $secondary-color;
+				font-weight: 900;
+				&:hover {
+					background: $primary-color;
+					color: $text-rev;
+					border: 1px solid $primary-color;
+				}
 			}
 		}
+		// .content {
+		// 	h3 {
+		// 		font-weight: 600;
+		// 		color: $text-rev;
+		// 	}
+		// 	p {
+		// 		font-size: 1.4rem;
+		// 		font-weight: 500;
+		// 		text-transform: capitalize;
+		// 		color: $text-rev;
+		// 	}
+		// }
 	}
 
 	&::after {
@@ -80,17 +91,20 @@
 }
 .hero-shapes {
 	position: relative;
-	margin-top: 5px;
+	margin: 2rem 0;
 
 	.hs-content {
-		background: rgba($text-color, 0.5);
-		padding: 5% 5% 10% 5%;
-		clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 100%, 0 81%);
+		background: rgba($primary-color, 0.7);
+		padding: 5% 10% 5% 5%;
+		// clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 100%, 0 81%);
+		clip-path: polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%);
 
 		.hs-content-text {
-			font-size: 1.3rem;
+			font-size: 1.1rem;
 			color: $text-rev;
+			text-transform: capitalize;
 			font-weight: 700;
+			margin-left: 0.5rem;
 		}
 	}
 }
