@@ -24,7 +24,7 @@
 
 				&:hover {
 					// background: rgba($primary-color, 0.5);
-					background: lighten($primary-color, 30);
+					background: lighten($primary-color, 5);
 				}
 			}
 			.button {
@@ -44,7 +44,7 @@
 
 	&.scrolled {
 		height: 65px;
-		background: rgba($text-rev, 0.9);
+		background: rgba($text-color, 0.8);
 
 		// #button {
 		// 	background: $text-rev;
