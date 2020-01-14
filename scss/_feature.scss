@@ -16,6 +16,15 @@
 }
 .feature-wrapper {
 	margin: 8vh 0 1vh 0;
+	.feature-icon {
+		margin-bottom: 0.8rem;
+		img {
+			background: $text-rev;
+			padding: 1.2rem;
+			border: 5px solid $primary-color;
+			border-radius: 50%;
+		}
+	}
 	.feature-heading {
 		h3 {
 			font-weight: 600;
@@ -26,6 +35,6 @@
 		margin: 1vh 0;
 		color: rgba($text-color, 0.7);
 		font-size: 1.1rem;
-		font-weight: 500;
+		font-weight: 600;
 	}
 }

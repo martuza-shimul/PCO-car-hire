@@ -247,6 +247,17 @@
   margin: 8vh 0 1vh 0;
 }
 
+.feature-wrapper .feature-icon {
+  margin-bottom: 0.8rem;
+}
+
+.feature-wrapper .feature-icon img {
+  background: #f2f2f2;
+  padding: 1.2rem;
+  border: 5px solid #3c40c6;
+  border-radius: 50%;
+}
+
 .feature-wrapper .feature-heading h3 {
   font-weight: 600;
   font-size: 1.5rem;
@@ -256,7 +267,7 @@
   margin: 1vh 0;
   color: rgba(30, 39, 46, 0.7);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact {
