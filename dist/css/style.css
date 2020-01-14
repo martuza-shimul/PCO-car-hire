@@ -222,6 +222,43 @@
   margin-top: 10px;
 }
 
+.what-is {
+  background: #fce205;
+  padding: 5vh 0;
+}
+
+.what-is .heading {
+  padding-bottom: 15px;
+}
+
+.what-is .heading h1 {
+  color: #1e272e;
+}
+
+.what-is .sub-heading {
+  color: rgba(30, 39, 46, 0.7);
+}
+
+.what-is .sub-heading h4 {
+  font-weight: 600;
+}
+
+.feature-wrapper {
+  margin: 8vh 0 1vh 0;
+}
+
+.feature-wrapper .feature-heading h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.feature-wrapper .feature-content {
+  margin: 1vh 0;
+  color: rgba(30, 39, 46, 0.7);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 .contact {
   background: #3c40c6;
   padding: 5vh 0;
