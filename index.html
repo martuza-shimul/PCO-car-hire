@@ -87,27 +87,75 @@
 									<div class="quote-engine-wrapper d-flex justify-content-center">
 										<form action="./dist/php/data.php" method="POST">
 											<div class="first">
-												<h5 class="center-align">What type of Paining do you need?</h5>
+												<h5 class="center-align">What will be the fuel type?</h5>
 												<p>
 													<label>
-														<input  class="with-gap" name="first" value="Domestic Painting" type="radio"  />
-														<span>Domestic Painting</span>
+														<input  class="with-gap" name="first" value="Petrol Hybrid" type="radio"  />
+														<span>Petrol Hybrid</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="first" value="Commercial Painting" type="radio"  />
-														<span>Commercial Painting</span>
+														<input  class="with-gap" name="first" value="Diesel" type="radio"  />
+														<span>Diesel</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="first" type="radio" value="Exterior Painting"  />
-														<span>Exterior Painting</span>
+														<input  class="with-gap" name="first" type="radio" value="Electric"  />
+														<span>Electric</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="Petrol"  />
+														<span>Petrol</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="Hybrid (Petrol)"  />
+														<span>Hybrid (Petrol)</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="first" type="radio" value="LPG"  />
+														<span>LPG</span>
 													</label>
 												</p>
 												
 												<button onclick="handleRadioClick()"  type="button" class="btn button">Continue</button>
+											</div>
+											<div class="second hide">
+												<h5 class="center-align">What will be the Weekly price?</h5>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£100 - £200" type="radio"  />
+														<span>£100 - £200</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£200 - £350" type="radio"  />
+														<span>£200 - £350</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£350 - £500" type="radio"  />
+														<span>£350 - £500</span>
+													</label>
+												</p>
+												<p>
+													<label>
+														<input  class="with-gap" name="second" value="£500 - £750" type="radio"  />
+														<span>£500 - £750</span>
+													</label>
+												</p>
+												
+												
+												<button onclick="handlePrice()"  type="button" class="btn button">Continue</button>
 											</div>
 											<!-- <div class="second hide">
 												<h5 class="center-align">Which Vehicle need service?</h5>
@@ -200,7 +248,7 @@
 												 
 											</div>
 											<div class="third hide">
-												<h5 class="center-align">When do you want this service completed?</h5>
+												<h5 class="center-align">When do you want need your car?</h5>
 												<p>
 													<label>
 														<input  class="with-gap" name="third" type="radio" value="As soon as possible" />
@@ -210,14 +258,14 @@
 												
 												<p>
 													<label>
-														<input  class="with-gap" name="third" type="radio" value="Within the next month"  />
-														<span>Within the next week</span>
+														<input  class="with-gap" name="third" type="radio" value="Within this next week"  />
+														<span>Within this next week</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="third" type="radio" value="Within the next 3 weeks"  />
-														<span>Within the next 3 weeks</span>
+														<input  class="with-gap" name="third" type="radio" value="Within the next weeks"  />
+														<span>Within the next weeks</span>
 													</label>
 												</p>
 												<p>
@@ -235,29 +283,29 @@
 												<button onclick="handleThird()"  type="button" class="btn button">Continue</button>
 											</div>
 											<div class="fourth hide">
-												<h5 class="center-align">Who will purchase the materials?</h5>
+												<h5 class="center-align">For how long you need the car?</h5>
 												<p>
 													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="I will provide the materials" />
-														<span>I will provide the materials</span>
+														<input  class="with-gap" name="fourth" type="radio" value="3-6 months" />
+														<span>3-6 months</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="I would like the pro to provide materials"  />
-														<span>I would like the pro to provide materials</span>
+														<input  class="with-gap" name="fourth" type="radio" value="6-12 months"  />
+														<span>6-12 months</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="I would like to discuss with the professional" />
-														<span>I would like to discuss with the professional</span>
+														<input  class="with-gap" name="fourth" type="radio" value="12-18 months" />
+														<span>12-18 months</span>
 													</label>
 												</p>
 												<p>
 													<label>
-														<input  class="with-gap" name="fourth" type="radio" value="No materials needed" />
-														<span>No materials needed</span>
+														<input  class="with-gap" name="fourth" type="radio" value="18-24 months" />
+														<span>18-24 months</span>
 													</label>
 												</p>
 												<button onclick="handleFourth()"  type="button" class="btn button">Continue</button>

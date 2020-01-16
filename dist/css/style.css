@@ -266,7 +266,7 @@
 .feature-wrapper .feature-content {
   margin: 1vh 0;
   color: rgba(30, 39, 46, 0.7);
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
@@ -628,12 +628,12 @@ body {
 }
 
 ::-moz-selection {
-  color: #d2dae2;
+  color: #1e272e;
   background: #fce205;
 }
 
 ::selection {
-  color: #d2dae2;
+  color: #1e272e;
   background: #fce205;
 }
 
