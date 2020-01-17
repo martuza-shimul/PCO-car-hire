@@ -113,3 +113,16 @@
 .hero-button {
 	margin-top: 10px;
 }
+.thank-content {
+	padding-top: 5vh;
+	h1,
+	h3 {
+		color: $text-rev;
+	}
+	h1 {
+		font-weight: 900;
+	}
+	h3 {
+		font-weight: 500;
+	}
+}

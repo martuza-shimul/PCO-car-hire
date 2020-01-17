@@ -223,6 +223,23 @@
   margin-top: 10px;
 }
 
+.thank-content {
+  padding-top: 5vh;
+}
+
+.thank-content h1,
+.thank-content h3 {
+  color: #f2f2f2;
+}
+
+.thank-content h1 {
+  font-weight: 900;
+}
+
+.thank-content h3 {
+  font-weight: 500;
+}
+
 .what-is {
   background: #fce205;
   padding: 5vh 0;
