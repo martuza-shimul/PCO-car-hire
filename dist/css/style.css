@@ -240,6 +240,50 @@
   font-weight: 500;
 }
 
+.about {
+  background: #3c40c6;
+  color: #f2f2f2;
+  overflow: hidden;
+  padding: 30px 0 50px 0;
+  position: relative;
+  margin: -2px 0;
+}
+
+.about .image-holder {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f2f2f2;
+  padding: 2%;
+}
+
+.about .about-content {
+  padding: 2% 0 0 0;
+}
+
+.about .about-content h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+
+.about .about-content p {
+  font-size: 1.1rem;
+}
+
+.rates .about-content {
+  padding: 3% 0 0 0;
+}
+
+.rates .about-content h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2%;
+}
+
+.rates .about-content p {
+  font-size: 1.1rem;
+}
+
 .what-is {
   background: #fce205;
   padding: 5vh 0;
@@ -568,8 +612,8 @@
 .page-header {
   height: 60vh;
   padding: 15vh 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 39, 46, 0.5))), url("../img/page-header2.jpg") no-repeat center;
-  background: linear-gradient(rgba(30, 39, 46, 0.5)), url("../img/page-header2.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(30, 39, 46, 0.6))), url("../img/page-header2.jpg") no-repeat center;
+  background: linear-gradient(rgba(30, 39, 46, 0.6)), url("../img/page-header2.jpg") no-repeat center;
   background-size: cover;
   background-position: 300px -100px;
   background-blend-mode: multiply;
