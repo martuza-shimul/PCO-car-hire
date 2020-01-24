@@ -9,6 +9,7 @@
 @import "./h-works";
 @import "./service";
 @import "./contact";
+@import "./privacy";
 @import "./area-cover";
 @import "./footer";
 @import "./page-header";
@@ -54,4 +55,7 @@ body {
 	.sl-single {
 		margin: 2vh 0;
 	}
+}
+.color-secondary {
+	color: $secondary-color;
 }

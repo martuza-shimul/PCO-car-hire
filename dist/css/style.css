@@ -540,6 +540,22 @@
   transition: 0.3s ease-in;
 }
 
+.privacy-policy {
+  padding: 5vh 0;
+}
+
+.privacy-policy ul {
+  margin-left: 20px;
+}
+
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4,
+.privacy-policy h5 {
+  font-weight: 900;
+}
+
 .area-cover {
   padding: 5vh 0;
 }
@@ -626,6 +642,10 @@
 
 .footer p {
   margin: 0;
+}
+
+.footer p a:hover {
+  color: #fce205;
 }
 
 .page-header {
@@ -845,5 +865,9 @@ body {
 
 .safety-logos .sl-single {
   margin: 2vh 0;
+}
+
+.color-secondary {
+  color: #fce205;
 }
 /*# sourceMappingURL=style.css.map */
